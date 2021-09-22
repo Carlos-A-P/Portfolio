@@ -10,21 +10,14 @@ html, body{
 }
 
 /* navigation */
-.header-area .main-menu .navbar .navbar-brand{
-	font-weight: 600;
-	padding: 0 ;
-	color: white;
+.navbar-brand.name {
+ font-size: 16px;
+ text-transform: uppercase;
+ /* color: white; */
 }
 
-.header-area .main-menu .navbar {
-	padding: 1rem 15rem;
-}
-
-.header-area .main-menu .nav-item .nav-link{
-	text-transform: uppercase;
-	font-weight: 500;
-	padding: 1.7rem;
-	color: white;
+header nav li a{
+	/* color: white; */
 }
 
 /* /navigation */
