@@ -34,13 +34,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -54,18 +54,83 @@
         <section class="intro d-flex flex-column align-items-center">
             <h1>Hi, I'm Carlos</h1>
             <p>Front-End Developer</p>
-            <div class="social">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-linkedin"></i>
+            <p class="resume"><a href="#">My Resume</a></p>
+            <div class="social-header d-flex justify-content-end">
+                <a class="circle" href="#">
+                    <span class="twitter">
+                        <img src="icons/twitter.svg" alt="twitter">
+                    </span>
+                </a>
+                <a class="circle" href="#">
+                    <span class="github">
+                        <img src="icons/github.svg" alt="github">
+                    </span>
+                </a>
+                <a class="circle" href="#">
+                    <span class="linkedIn">
+                        <img src="icons/linkedin (1).svg" alt="LinkedIn">
+                    </span>
+                </a>
             </div>
-            <button class="resume">My Resume</button>
         </section>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>My goal is to improve my skills and </p>
+        <section class="about px-3" id="about">
+            <h2 class="py-3">About Me</h2>
+            <p class="lh-lg">Hello! I'm a web developer with a passion for front-end development and design. I aspire
+                toward a career
+                that will allow me to channel my creativity through creating software and engaging experiences. </p>
+        </section>
+        <section class="skills px-3" id="skills">
+            <h2 class=" mb-4">Skills</h2>
+            <div class="skills d-flex justify-content-around px-2">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>TypeScript</li>
+                </ul>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                    <li>C++</li>
+                    <li>VB.NET</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects px-3" id="projects">
+            <h2 class=" mb-4">Projects</h2>
+            <div class="grid">
+                <div class="card">
+
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="py-5">
+        <div class="social-footer d-flex justify-content-center">
+            <a class="circle" href="#">
+                <span class="twitter">
+                    <img src="icons/twitter.svg" alt="twitter">
+                </span>
+            </a>
+            <a class="circle" href="#">
+                <span class="github">
+                    <img src="icons/github.svg" alt="github">
+                </span>
+            </a>
+            <a class="circle" href="#">
+                <span class="linkedIn">
+                    <img src="icons/linkedin (1).svg" alt="LinkedIn">
+                </span>
+            </a>
+        </div>
+        <div class="copyright pt-3"> &copy;Carlos Perez</div>
+        <div class="p-icon">
+            Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
 </body>
 
 </html>
