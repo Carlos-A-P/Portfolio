@@ -16,8 +16,14 @@ html, body{
  /* color: white; */
 }
 
-header nav li a{
-	/* color: white; */
+.navbar-light .navbar-brand {
+    color: red;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: red;
+}
+
+
 
 /* /navigation */
