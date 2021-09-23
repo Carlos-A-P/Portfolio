@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- font awesome icons -->
@@ -14,19 +13,25 @@
     <script src="js/bootstrap.min.js" defer></script>
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- custom js file -->
+    <script src="js/script.js" defer></script>
+    <script src="js/jq.js" defer></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>CPWD Portfolio</title>
-    <script src="https://kit.fontawesome.com/e9929ccd6a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light sticky">
             <div class="container-fluid px-3">
-                <a class="navbar-brand" href="#top">Carlos Perez</a>
+                <a class="navbar-brand" href="#header">Carlos Perez</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="icons/icon-hamburger.svg" alt="Navigation Menu">
@@ -51,7 +56,7 @@
         </nav>
     </header>
     <main>
-        <section class="intro d-flex flex-column align-items-center">
+        <section class="intro d-flex flex-column align-items-center" id="header">
             <h1>Hi, I'm Carlos</h1>
             <p>Front-End Developer</p>
             <p class="resume"><a href="#">My Resume</a></p>
