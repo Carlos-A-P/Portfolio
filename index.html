@@ -17,45 +17,23 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>CPWD Portfolio</title>
+    <script src="https://kit.fontawesome.com/e9929ccd6a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand name" href="#">Carlos Perez</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Carlos Perez</a>
+        <nav class="navbar navbar-expand-lg navbar-light sticky">
+            <div class="container-fluid px-3">
+                <a class="navbar-brand" href="#top">Carlos Perez</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span>
+                    <img src="icons/icon-hamburger.svg" alt="Navigation Menu">
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
@@ -72,6 +50,22 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="intro d-flex flex-column align-items-center">
+            <h1>Hi, I'm Carlos</h1>
+            <p>Front-End Developer</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <button class="resume">My Resume</button>
+        </section>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My goal is to improve my skills and </p>
+        </section>
+    </main>
 </body>
 
 </html>
