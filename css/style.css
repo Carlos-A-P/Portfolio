@@ -168,11 +168,12 @@ p.resume {
 	display: grid;
 	grid-gap: 40px;
 	width: 100%;
-	grid-template-columns: repeat(auto-fit, 286px);
+	grid-template-columns: repeat(auto-fit, 20rem);
 }
 
 .projects .card{
 	text-align: left;
+	width: 20rem;
 }
 
 .projects .card .project-img{
@@ -181,6 +182,14 @@ p.resume {
 	background-size: cover;
 	background-position: top 0 center;
 }
+
+/* .card-text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 73px;
+	width: 100%;
+	white-space: nowrap;
+} */
 
 /* /projects */
 
