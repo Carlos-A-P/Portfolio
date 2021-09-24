@@ -139,7 +139,7 @@ p.resume {
 }
 /* /introduction */
 
-section:not(:first-child){
+.skills, .about{
 	margin: 5rem auto;
 	max-width: 510px;
 	text-align: center;
@@ -157,6 +157,32 @@ section:not(:first-child){
 }
 
 /* /skills */
+
+/* projects */
+.projects{
+	max-width: 1210px;
+}
+
+.grid{
+	margin: 2rem 0 4rem;
+	display: grid;
+	grid-gap: 40px;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, 286px);
+}
+
+.projects .card{
+	text-align: left;
+}
+
+.projects .card .project-img{
+	height: 286px;
+	background-image: url(../img/coffeeroasters-subscription.png);
+	background-size: cover;
+	background-position: top 0 center;
+}
+
+/* /projects */
 
 /* footer */
 footer{
