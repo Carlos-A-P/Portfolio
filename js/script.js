@@ -1,7 +1,7 @@
 const projects = `[
     {
         "title": "Coffee Roasters - Subscription",
-        "image": "url(img/coffeeroasters-subscription.jpg)",
+        "image": "url(../img/coffeeroasters-subscription.png)",
         "description": "This is a 3-page coffee subscription website. Users should be able to: View the optimal layout for each page depending on their device's screen size, See hover states for all interactive elements throughout the site, Make selections to create a coffee subscription and see an order summary modal of their choices.",
         "live": "https://cpwd-coffeeroasters.netlify.app/",
         "code": "https://github.com/Carlos-A-P/coffeeroasters-subscription-site",
@@ -11,7 +11,7 @@ const projects = `[
     },
     {
         "title": "Github User Search App",
-        "image": "url(img/github-user-search-app.jpg)",
+        "image": "url(../img/github-user-search-app.jpg)",
         "description": "This app allows users to search for a username from github. The app displays the user's username,. date joined, bio, links added, number of followers, number of repos, and number of following",
         "live": "https://cpwd-github-user-search-app.netlify.app/",
         "code": "https://github.com/Carlos-A-P/github-user-search-app",
@@ -21,7 +21,7 @@ const projects = `[
     },
     {
         "title": "To-Do App",
-        "image": "url(img/todo-app.jpg)",
+        "image": "url(../img/todo-app.jpg)",
         "description": "This is a todo list challenge from frontend mentor. Important things I learned from this project are theme changer mechanics, localStorage, and JSON",
         "live": "https://cpwd-todo-list.netlify.app/",
         "code": "https://github.com/Carlos-A-P/ToDo-List",
@@ -31,7 +31,7 @@ const projects = `[
     },
     {
         "title": "Tip Calculator",
-        "image": "url(img/tip-calculator.jpg)",
+        "image": "url(../img/tip-calculator.jpg)",
         "description": "This is a tip calculator app from frontend mentor. This project was completed with the help of HTML, CSS, and JavaScript",
         "live": "https://carlospwd-tip-calculator.netlify.app/",
         "code": "https://github.com/Carlos-A-P/tip-calculator-app",
@@ -41,7 +41,7 @@ const projects = `[
     },
     {
         "title": "Room Homepage",
-        "image": "url(img/room-homepage.jpg)",
+        "image": "url(../img/room-homepage.jpg)",
         "description": "A Frontend mentor project completed with HTML, CSS, and JavaScript. This project contains an interactive nav bar with a slideshow",
         "live": "https://cpwd-room-homepage.netlify.app/",
         "code": "https://github.com/Carlos-A-P/room-homepage",
@@ -51,7 +51,7 @@ const projects = `[
     },
     {
         "title": "Launch Countdown Timer",
-        "image": "url(img/launch-countdown-timer.jpg)",
+        "image": "url(../img/launch-countdown-timer.jpg)",
         "description": "This is a countdown timer challenge that I completed using HTML, CSS, and JavaScript. I used most of the javascript and css for the timer from this code: https://codepen.io/shshaw/pen/vKzoLL So I mainly focused on styling the countdown timer as if I were in a situation where I would really have an html and had to prioritize my CSS over the timer…",
         "live": "https://cpwd-count-down-timer.netlify.app/",
         "code": "https://github.com/Carlos-A-P/launch-countdown-timer",
@@ -61,7 +61,7 @@ const projects = `[
     },
     {
         "title": "Time Tracking DashBoard",
-        "image": "url(img/time-tracking-dashboard.jpg)",
+        "image": "url(../img/time-tracking-dashboard.jpg)",
         "description": "This is a Front End mentor project. User can toggle between viewing Daily, Weekly, and Monthly stats",
         "live": "https://cpwd-time-tracking-dashboard.netlify.app/",
         "code": "https://github.com/Carlos-A-P/time-tracking-dashboard",
@@ -71,7 +71,7 @@ const projects = `[
     },
     {
         "title": "Testimonial Grid Section",
-        "image": "url(img/testimonial-grid-section.JPG)",
+        "image": "url(../img/testimonial-grid-section.JPG)",
         "description": "A Frontend Mentor project. This is a project where I used grid to position each card component in their own position with different heights",
         "live": "https://cpwd-testimonial-grid-section.netlify.app/",
         "code": "https://github.com/Carlos-A-P/testimonial-grid-section",
@@ -81,7 +81,7 @@ const projects = `[
     },
     {
         "title": "Interactive Pricing Component",
-        "image": "url(img/interactive-pricing-component.jpg)",
+        "image": "url(../img/interactive-pricing-component.jpg)",
         "description": "A Frontend Mentor project, this is a project where users are able to slide a bar and change the prices depending on the position of the slider. I used Javascript, CSS, and HTML to complete this project",
         "live": "https://app.netlify.com/sites/cpwd-interactive-pricing-component/settings/general",
         "code": "https://github.com/Carlos-A-P/interactive-pricing-component-main",
@@ -91,7 +91,7 @@ const projects = `[
     },
     {
         "title": "Fylo Data Storage Component",
-        "image": "url(img/fylo-data-storage-component.jpg)",
+        "image": "url(../img/fylo-data-storage-component.jpg)",
         "description": "A Frontend Mentor project. I storage component that shows the amount of space left.",
         "live": "https://cpwd-fylo-storage-component.netlify.app/",
         "code": "https://github.com/Carlos-A-P/fylo-data-storage-component",
@@ -101,7 +101,7 @@ const projects = `[
     },
     {
         "title": "Fylo Dark Theme Landing Page",
-        "image": "url(img/fylo-dark-theme-landing-page.jpg)",
+        "image": "url(../img/fylo-dark-theme-landing-page.jpg)",
         "description": "A challenge from front end mentor. This is a landing page made with CSS, HTML, and a bit of JavaScript. This is a main landing page for Fylo company",
         "live": "https://cpwd-fylo-dark-theme-landing-page.netlify.app/#",
         "code": "https://github.com/Carlos-A-P/fylo-dark-theme-landing-page",
@@ -111,7 +111,7 @@ const projects = `[
     },
     {
         "title": "Pricing component with toggle",
-        "image": "url(img/pricing-component-with-toggle.JPG)",
+        "image": "url(../img/pricing-component-with-toggle.JPG)",
         "description": "This project is a pricing component where the use is able to see display cards and toggle between prices using a slider. I used JavaScript to incorporate a slider between two options and display them within my HTML",
         "live": "https://cpwd-pricing-component-with-toggle.netlify.app/",
         "code": "https://github.com/Carlos-A-P/Pricing-component-with-toggle",
@@ -121,7 +121,7 @@ const projects = `[
     },
     {
         "title": "Sunnyside Agency Landing Page",
-        "image": "url(img/sunnyside-agency-landing-page.JPG)",
+        "image": "url(../img/sunnyside-agency-landing-page.JPG)",
         "description": "This is a challenge from frontend mentor. I used HTML, CSS, and JavaScript to complete this project and learned how to make a mobile dropdown nav bar using JavaScript",
         "live": "https://carlospwd-sunnyside-agency-landing-page-main.netlify.app/",
         "code": "https://github.com/Carlos-A-P/sunnyside-agency-landing-page-main",
@@ -143,7 +143,83 @@ const projects = `[
 // }
 
 console.log(JSON.parse(projects).title)
+let myProjects = document.getElementById("grid")
 
+function addCard(card_image, card_title, card_text) {
+    // create a card div
+    let projectCard = document.createElement('div')
+    projectCard.classList.add('card')
+    // create image div to add background image for card
+    let cardImage = document.createElement('div')
+    cardImage.classList.add('project-img')
+    cardImage.style.backgroundImage = String(card_image)
+    // create card body
+    let cardBody = document.createElement('div')
+    cardBody.classList.add('card-body', 'd-flex', 'flex-column')
+    //create card card title
+    let cardTitle = document.createElement('h3')
+    cardTitle.classList.add('card-title')
+    cardTitle.innerHTML = String(card_title)
+    // create card textContent
+    let cardText = document.createElement('p')
+    cardText.classList.add('card-text')
+    cardText.innerHTML = String(card_text)
+    //create button
+    let cardButton = document.createElement('button')
+    cardButton.classList.add('btn', 'btn-outline-secondary', 'mt-auto')
+    cardButton.setAttribute('type', 'button')
+    cardButton.setAttribute('data-bs-toggle', 'modal')
+    cardButton.setAttribute('data-bs-target', '#staticBackdrop')
+    cardButton.setAttribute('onClick', `modalInfo('${card_title}')`)
+    cardButton.innerHTML = 'View more'
+    // start assembling card div
+    projectCard.appendChild(cardImage)
+    projectCard.appendChild(cardBody)
+    cardBody.appendChild(cardTitle)
+    cardBody.appendChild(cardText)
+    cardBody.appendChild(cardButton)
+
+    //add card to parent div
+    myProjects.appendChild(projectCard)
+    {/*
+    <div class="card">
+        <div class="project-img"></div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                the
+                card's content.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                View more
+            </button>
+        </div>
+    </div>
+*/}
+}
+
+function displayProjects() {
+    for (let i = 0; i < JSON.parse(projects).length; i++) {
+        addCard(JSON.parse(projects)[i].image, JSON.parse(projects)[i].title, JSON.parse(projects)[i].description)
+    }
+}
+displayProjects()
+
+let modalTitle = document.getElementById('staticBackdropLabel')
+let card_description = document.getElementById('card-description')
+let codeBtn = document.getElementById('viewCode')
+let liveBtn = document.getElementById('viewLive')
+function modalInfo(myCard) {
+    for (let i = 0; i < JSON.parse(projects).length; i++) {
+        if (myCard === String(JSON.parse(projects)[i].title)) {
+            modalTitle.innerText = String(JSON.parse(projects)[i].title)
+            card_description.innerText = String(JSON.parse(projects)[i].longer_description)
+            codeBtn.setAttribute('href', `${JSON.parse(projects)[i].code}`)
+            liveBtn.setAttribute('href', `${JSON.parse(projects)[i].live}`)
+        }
+    }
+}
 // ============modal for card description
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
