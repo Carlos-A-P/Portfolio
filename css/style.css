@@ -26,6 +26,14 @@ body{
  /* color: white; */
 }
 
+nav .container-fluid {
+	max-width: 1200px;
+}
+
+nav ul{
+	gap: 10px;
+}
+
 .navbar-light .navbar-brand {
     color: white;
 }
@@ -51,7 +59,13 @@ body{
 }
 
 header nav{
+	background-color: transparent;
+	transition: 0.3s
+}
+
+header nav.scrolled{
 	background-color: black;
+	transition: 0.3s
 }
 
 .navbar-toggler:focus {
@@ -186,15 +200,49 @@ p.resume {
 	border-radius: .50rem .50rem 0 0;
 }
 
-/* .card-text {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	height: 73px;
-	width: 100%;
-	white-space: nowrap;
-} */
+.card .btn, .modal-footer a.btn{
+	border-radius: .25rem;
+	color: #ec8f6a;
+    border-color: #ec8f6a;
+    /* transition: all 0.3s ease; */
+}
 
+.card .btn:hover, .modal-footer a.btn:hover{
+    color: #fff;
+    background: #ec8f6a;
+	/* transition: 0.5s; */
+}
 /* /projects */
+
+/* modal */
+
+.techUsed li {
+	list-style: none;
+	border: 1px solid #ec8f6a;
+	border-radius: 50px;
+	padding: 5px 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #ec8f6a;
+	background-color: #fcf8f6;
+}
+
+.techUsed ul {
+	gap: 10px;
+	padding: 0;
+}
+
+.modal-footer button{
+    color: #fff;
+    background: #ec8f6a;	
+}
+
+.modal-footer button:hover{
+    color: #fff;
+    filter: brightness(1.1) grayscale(20%);	
+}
+/* /modal */
 
 /* footer */
 footer{
@@ -249,5 +297,24 @@ footer{
 		bottom: 1rem;
 		right: 1.5rem;
 		margin-top: 0rem;
+	}
+}
+
+@media (max-width: 974px){
+	header nav{
+		background-color: black;
+		transition: 0;
+	}
+	
+	header nav.scrolled{
+		transition: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce){
+	.btn {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
 	}
 }
