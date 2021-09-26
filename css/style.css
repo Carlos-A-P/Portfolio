@@ -20,11 +20,11 @@ body{
 } */
 
 /* navigation */
-.navbar-brand.name {
+/* .navbar-brand.name {
  font-size: 16px;
  text-transform: uppercase;
  /* color: white; */
-}
+
 
 nav .container-fluid {
 	max-width: 1200px;
@@ -36,8 +36,12 @@ nav ul{
 
 .navbar-light .navbar-brand {
     color: white;
-	font-weight: bold;
+    font-weight: 500;
+    position: relative;
+    padding-left: 50px;
 }
+
+.navbar-light .navbar-brand::before {background-position: left -35px top -20px;width: 44px;height: 40px;content: '';background-image: url("../img/my_logo.png");background-size: 118px auto;background-repeat: no-repeat;height: 32px;left: -3px;position: absolute;filter: brightness(100);display: inline-block;}
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(253, 253, 253, 0.6);
