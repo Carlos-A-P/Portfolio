@@ -88,7 +88,7 @@ header nav button img{
 /* introduction */
 .intro{
 	height: 570px;
-	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-forest.jpg);	
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom 0 left 0;
