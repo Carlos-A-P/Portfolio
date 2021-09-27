@@ -1,6 +1,6 @@
-# Coffeeroasters subscription site
+# My Portfolio
 
-- Live website -(https://cpwd-coffeeroasters.netlify.app)
+- Live website -(https://carlospwd.netlify.app/)
 
 ## Table of contents
 
@@ -18,11 +18,13 @@ Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
-- Make selections to create a coffee subscription and see an order summary modal of their choices
+- Play preview video for each of the project card
+- See modal displaying information on project card selected
+- Submit email form and send email out to the developer of the webs
 
 ### Expected bahaviour
 
-The interactive subscription page has a number of specific behaviours, which are listed below:
+- When
 
 - If "Capsule" is selected for the first option
   - The "Want us to grind them?" section should be disabled and not able to be opened
@@ -58,31 +60,21 @@ The interactive subscription page has a number of specific behaviours, which are
 
 ### Screenshot
 
-### End Result
+- The full end result of my portfolio
 
-- First Page: Main
+![carlospwd netlify app_](https://user-images.githubusercontent.com/85038929/134842106-3038347d-28ec-470e-b7cf-dc3f41b76616.png)
 
-![cpwd-coffeeroasters netlify app_plan html](https://user-images.githubusercontent.com/85038929/133548116-999b06f1-2c42-4e68-a3f7-6705bf1094e1.png)
+- Modal card displaying selected project information
 
--Second Page: About
-
-![cpwd-coffeeroasters netlify app_about html](https://user-images.githubusercontent.com/85038929/133548210-357652e7-1761-4fe4-b89e-67c41cf164b8.png)
-
--Third Page: Plan
-
-![cpwd-coffeeroasters netlify app_plan html (1)](https://user-images.githubusercontent.com/85038929/133548445-777761d4-e52c-429f-a88a-ebeb11ac6e5c.png)
-
--modal
-
-![cpwd-coffeeroasters netlify app_plan html (2)](https://user-images.githubusercontent.com/85038929/133548525-2e236be2-cc9d-4df5-9b80-9b568b739273.png)
+![carlospwd netlify app_ (1)](https://user-images.githubusercontent.com/85038929/134842122-5fa12ef9-1afe-4af0-9056-3fa06ed9f5b6.png)
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- CSS FlexBox
+- CSS
 - JavaScript
-- Media Queries
+- BootStrap
+- JQuery
 
 ### What I learned
 
@@ -91,85 +83,13 @@ This was a tough challenge that tested a lot of my javascript skills and organiz
 - This portion of my JavaScript was my event listener for my cards within my accordion. Within the first portion I was setting up my variables for each option.
 
 ```JavaScript
-card.forEach(selected => {
-    selected.addEventListener('click', () => {
-        let choice = selected.firstElementChild.innerHTML
-        console.log()
-        if (choice === 'Capsule' || choice === 'Espresso') {
-            choice1 = choice
-            createPlan.classList.add('disabled')
-        }else if (choice === 'Single origin' || choice === 'Decaf' || choice === 'Blended') {
-            choice2 = choice
-        }
-        if (choice === '250g' || choice === '500g' || choice === '1000g') {
-            choice3 = choice
-        }
-        if (choice === 'Wholebean' || choice === 'Cafetiére') {
-            choice4 = choice
-        }
-        if (choice === 'Every week' || choice === 'Every 2 weeks' || choice === 'Every month') {
-            choice5 = choice
-        }
 
-        const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
-        if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
-            choice1 = choice
-            createPlan.classList.add('disabled')
-            createPlan.innerHTML = `<a>Create my plan!</a>`
-        } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
-            choice4 = choice
-        }
-
-        arr = [choice1, choice2, choice3, choice4, choice5]
-        if(choice1 === 'Capsule'){
-            grindOption.classList.add('disabled')
-            createPlan.innerHTML = `<a>Create my plan!</a>`
-            capsule()
-
-            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
-                createPlan.classList.remove('disabled')
-                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
-                priceTotal()
-            }
-        }else{
-            for(let i=0; i < arr.length; i++){
-                if(arr[i] === undefined){
-                    arr[i] = `<span></span>`
-                } else{
-                    arr[i] = `<span class="full">${arr[i]}</span>`
-                }
-            }
-            grindOption.classList.remove('disabled')
-
-            summary.innerHTML = `“I drink my coffee as ${arr[0]}, with a ${arr[1]} type of bean. ${arr[2]} ground ala ${arr[3]}, sent to me ${arr[4]}.”`
-            result = summary.innerHTML
-
-            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice4 !== undefined && choice5 !== undefined) {
-                createPlan.classList.remove('disabled')
-                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
-                priceTotal()
-            }
-        }
-
-        setSelected(selected)
-
-
-        return arr, result
-    })
-})
 ```
 
 - In the syntax below, I am checking to see if the user chose the option 'Filter' either for the first time or the second time in order to correctly fill in the blanks within the summery at the bottom of the page. If I didn't do this then the summery will fill in both lines for option 1 and option 4 before the user got to the 4th option.
 
 ```JavaScript
-        const acc1 = selected.parentElement.parentElement.firstElementChild.innerHTML
-        if (choice === 'Filter' && acc1 === 'How do you drink your coffee?') {
-            choice1 = choice
-            createPlan.classList.add('disabled')
-            createPlan.innerHTML = `<a>Create my plan!</a>`
-        } else if (choice === 'Filter' && acc1 !== 'How do you drink your coffee?') {
-            choice4 = choice
-        }
+
 ```
 
 - After I prepared to place the correct variables in their appropriate lines through the following code.
@@ -179,29 +99,7 @@ card.forEach(selected => {
 - I removed the disabled class from the grind option incase the user chose the capsule option before the other two options for choice 1. I'd then insert a string via template literal along with my variables
 
 ```JavaScript
-        arr = [choice1, choice2, choice3, choice4, choice5]
-        if(choice1 === 'Capsule'){
-            grindOption.classList.add('disabled')
-            createPlan.innerHTML = `<a>Create my plan!</a>`
-            capsule()
 
-            if(choice1 !== undefined && choice2 !== undefined && choice3 !== undefined && choice5 !== undefined) {
-                createPlan.classList.remove('disabled')
-                createPlan.innerHTML = `<a href="#modal" onclick="togglePlan()">Create my plan!</a>`
-                priceTotal()
-            }
-        }else{
-            for(let i=0; i < arr.length; i++){
-                if(arr[i] === undefined){
-                    arr[i] = `<span></span>`
-                } else{
-                    arr[i] = `<span class="full">${arr[i]}</span>`
-                }
-            }
-            grindOption.classList.remove('disabled')
-
-            summary.innerHTML = `“I drink my coffee as ${arr[0]}, with a ${arr[1]} type of bean. ${arr[2]} ground ala ${arr[3]}, sent to me ${arr[4]}.”`
-            result = summary.innerHTML
 ```
 
 - in the case I ran the capsule option instead in my first choise, I essentially do the same thing but instead with fewer options and a different string is inserted in my summery.innerHTML
@@ -210,8 +108,15 @@ card.forEach(selected => {
 
 - [Debugging JavaScript in Visual Studio Code and Google Chrome](https://www.youtube.com/watch?v=AX7uybwukkk&ab_channel=JamesQQuick) - this video taught me how to debug my javascript using the debugger tool in developer tools
 
+email forum
+
+- [Debugging JavaScript in Visual Studio Code and Google Chrome](https://www.youtube.com/watch?v=AX7uybwukkk&ab_channel=JamesQQuick) - this video taught me how to debug my javascript using the debugger tool in developer tools
+
+icon page
+
+- [Debugging JavaScript in Visual Studio Code and Google Chrome](https://www.youtube.com/watch?v=AX7uybwukkk&ab_channel=JamesQQuick) - this video taught me how to debug my javascript using the debugger tool in developer tools
+
 ## Author
 
-- Website - [Carlos Perez](https://cpwd-coffeeroasters.netlify.app)
-- Frontend Mentor - [@Carlos-A-P](https://www.frontendmentor.io/profile/Carlos-A-P)
+- Website - [Carlos Perez](https://carlospwd.netlify.app)
 - Twitter - [@WDCarlosP](https://www.twitter.com/WDCarlosP)
