@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- font awesome icons -->
-    <link rel="stylesheet" href="css/all.min.css">
     <!-- bootstrap js file -->
     <script src="js/bootstrap.min.js" defer></script>
     <!-- custom css file -->
@@ -49,7 +47,7 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -80,13 +78,13 @@
             </div>
         </section>
         <section class="about px-3" id="about">
-            <h2 class="py-3">About Me</h2>
+            <h2 class="py-3 mb-4 mx-auto">About Me</h2>
             <p class="lh-lg">Hello! I'm a web developer with a passion for front-end development and design. I aspire
                 toward a career
                 that will allow me to channel my creativity through creating software and engaging experiences. </p>
         </section>
         <section class="skills px-3" id="skills">
-            <h2 class=" mb-4">Skills</h2>
+            <h2 class="py-3 mb-4">Technologies I've worked with</h2>
             <div class="list d-flex justify-content-around px-2">
                 <ul>
                     <li>HTML</li>
@@ -105,7 +103,7 @@
             </div>
         </section>
         <section class="projects d-flex flex-column align-items-center mx-auto" id="projects">
-            <h2 class=" mb-4">Projects</h2>
+            <h2 class="py-3 mb-4">Projects</h2>
             <div class="grid justify-content-center" id="grid">
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -118,13 +116,14 @@
                                 </button>
                             </div>
                             <div class="modal-body" id="modal-body">
-                                <h5>Preview</h5>
-                                <h5>Technologies used</h5>
+                                <h5 class="mb-3">Preview</h5>
+                                <div class="card-preview" id="card-preview"></div>
+                                <h5 class="mt-4 mb-3">Technologies used</h5>
                                 <div class="techUsed">
                                     <ul class="d-flex flex-wrap" id="tech_List">
                                     </ul>
                                 </div>
-                                <h5>What I learned</h5>
+                                <h5 class="mt-4 mb-3">What I learned</h5>
                                 <p id="card-description"></p>
                             </div>
                             <div class="modal-footer d-flex flex-row justify-content-start">
@@ -135,6 +134,39 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <section class="contact d-flex align-items-center justify-content-center flex-column" id="contact">
+            <img src="icons/email.svg" alt="contact">
+            <h5>Whether you have an idea for a project or just want to chat, feel free to
+                shoot me an email!</h5>
+            <div class="container">
+                <form action="https://formspree.io/f/mrgrjnzb" method="POST" id="my-form">
+
+                    <div class="form-group">
+                        <label for="firstName"> First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="massage">Message</label>
+                        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
     </main>
     <footer class="py-5">
         <div class="social-footer d-flex justify-content-center">
