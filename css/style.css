@@ -105,7 +105,7 @@ header nav button img {
 		url(../img/bg-forest.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom 0 left 0;
+	background-position: top 0 left 0;
 	color: white;
 	font-weight: 400;
 	padding-top: 13rem;
@@ -461,6 +461,10 @@ footer {
 
 	header nav.scrolled {
 		transition: 0;
+	}
+
+	.intro {
+		background-attachment: scroll;
 	}
 }
 
