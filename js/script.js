@@ -1,5 +1,23 @@
 const projects = `[
     {
+        "title": "My Portfolio",
+        "image": "url(../img/portfolio-preview.png)",
+        "description": "This is my portfolio that I created displaying my projects and work as a front-end developer. I aimed for a simple look and and format that's easy to navigate through.",
+        "live": "https://carlospwd.netlify.app/",
+        "code": "https://github.com/Carlos-A-P/Portfolio",
+        "made_with": {
+            "0":"HTML", 
+            "1":"CSS", 
+            "2":"JavaScript",
+            "3":"BootStrap",
+            "4":"JQuery",
+            "5":"JSON"
+        },
+        "preview": "<img src=\\"img/carlospwd.netlify.app_.png\\" alt=\\"My portfolio\\" style=\\"width:100%\\">",
+        
+        "longer_description": "This project was my first time implementing bootstrap and jquery into my project. I thought jquery was complex at first, but after getting the hang of its settings and reading through the documentation, I found that I saved a lot of time using this framework. I usually try to keep accessibility in mind, but bootstrap already gets that taken care of. I tried to keep animations to a minimum. I didn't want to rely on every user having above-average internet speed, and I learned that animations could be incredibly taxing on mobile devices. I used jquery to add some exciting animations into my nav settings. There were already many blogs and methods to do this, and I wanted to try it out. I'm glad I did since it made my portfolio look more professional, and I learned a lot about programming frameworks. As for the video previews, I was thinking of downloading video files, but I quickly learned that it could drastically slow down the website's loading speed. I also had a problem where I didn't want to create an individual modal for each card, so I used JSON object and for loops to pass in values depending on the card chosen. The JSON object also allowed me to add values and automatically update my project section by appending a new child. I did this using for loops."
+    },
+    {
         "title": "Coffee Roasters - Subscription",
         "image": "url(../img/coffeeroasters-subscription.png)",
         "description": "This is a 3-page coffee subscription website. Users should be able to: View the optimal layout for each page depending on their device's screen size, See hover states for all interactive elements throughout the site, Make selections to create a coffee subscription and see an order summary modal of their choices.",
