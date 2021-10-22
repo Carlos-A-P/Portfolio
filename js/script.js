@@ -284,7 +284,8 @@ function addCard(card_image, card_title, card_text) {
 
 // in this function, i gather the information that I want from the JSON object and pass it to my function where I want to make the div and append the div to the parent
 function displayProjects() {
-    for (let i = 0; i < 9; i++) {
+    // JSON.parse(projects).length or 9 for number display
+    for (let i = 0; i < JSON.parse(projects).length; i++) {
         addCard(JSON.parse(projects)[i].image, JSON.parse(projects)[i].title, JSON.parse(projects)[i].description)
     }
 }
