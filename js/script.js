@@ -1,8 +1,25 @@
 const projects = `[
     {
+        "title": "Shortly URL shortening API website",
+        "image": "url(../img/url-shortening-api.jpg)",
+        "description": "In this project, users should be able to: View the optimal layout for the site depending on their device's screen size, Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if: The input field is empty",
+        "live": "https://carlos-a-p.github.io/URL-shortening-API-master/",
+        "code": "https://github.com/Carlos-A-P/URL-shortening-API-master",
+        "made_with": {
+            "0":"HTML", 
+            "1":"CSS", 
+            "2":"JavaScript",
+            "3":"BootStrap",
+            "4":"API"
+        },
+        "preview": "<div style=\\"padding:64.29% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/635907938?h=4c214efa68&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"URL-Shortening-API\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
+        
+        "longer_description": "I used the BootStrap framework to get familiar using it and I noticed that it does make the project easier to complete. I also tried to insert a loading gif to simulate a loading element. I used a setTimeout() method to add a timer of 2 seconds after the user submits the input. Overall, this was a fun project and I hope to get proficient at utilizing Bootstrap"
+    },
+    {
         "title": "My Portfolio",
         "image": "url(../img/portfolio-preview.png)",
-        "description": "This is my portfolio that I created displaying my projects and work as a front-end developer. I aimed for a simple look and and format that's easy to navigate through.",
+        "description": "This is my portfolio that I created displaying my projects and work as a front-end developer. I aimed for a simple look and and format that's easy to navigate through. User should be able to view project cards along with video preview of projects. Also includes email submission form using Formspree API.",
         "live": "https://carlospwd.netlify.app/",
         "code": "https://github.com/Carlos-A-P/Portfolio",
         "made_with": {
@@ -13,7 +30,7 @@ const projects = `[
             "4":"JQuery",
             "5":"JSON"
         },
-        "preview": "<img src=\\"img/carlospwd.netlify.app_.png\\" alt=\\"My portfolio\\" style=\\"width:100%\\">",
+        "preview": "<div style=\\"padding:64.29% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/638017476?h=2a4669998e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"portfolio-preview\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
         
         "longer_description": "This project was my first time implementing bootstrap and jquery into my project. I thought jquery was complex at first, but after getting the hang of its settings and reading through the documentation, I found that I saved a lot of time using this framework. I usually try to keep accessibility in mind, but bootstrap already gets that taken care of. I tried to keep animations to a minimum. I didn't want to rely on every user having above-average internet speed, and I learned that animations could be incredibly taxing on mobile devices. I used jquery to add some exciting animations into my nav settings. There were already many blogs and methods to do this, and I wanted to try it out. I'm glad I did since it made my portfolio look more professional, and I learned a lot about programming frameworks. As for the video previews, I was thinking of downloading video files, but I quickly learned that it could drastically slow down the website's loading speed. I also had a problem where I didn't want to create an individual modal for each card, so I used JSON object and for loops to pass in values depending on the card chosen. The JSON object also allowed me to add values and automatically update my project section by appending a new child. I did this using for loops."
     },
@@ -267,7 +284,7 @@ function addCard(card_image, card_title, card_text) {
 
 // in this function, i gather the information that I want from the JSON object and pass it to my function where I want to make the div and append the div to the parent
 function displayProjects() {
-    for (let i = 0; i < JSON.parse(projects).length; i++) {
+    for (let i = 0; i < 9; i++) {
         addCard(JSON.parse(projects)[i].image, JSON.parse(projects)[i].title, JSON.parse(projects)[i].description)
     }
 }
