@@ -238,38 +238,12 @@ function addCard(card_image, card_title, card_text) {
 	//         <div class="card-body d-flex flex-column">
 	//             <h3 class="card-title">${String(card_title)}</h3>
 	//             <p class="card-text">${String(card_text)}</p>
-	//             <button class="btn mt-auto" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="modalInfo('${card_title}')">
+	//             <button class="btn mt-auto" type="button" data-bs-toggle="modal" onClick="modalInfo('${card_title}')">
 	//                 View more
 	//             </button>
 	//         </div>
 
 	// `;
-
-	// <div class="card">
-	// 	<div
-	// 		class="project-img"
-	// 		style="background-image: url('../img/url-shortening-api.jpg');"
-	// 	></div>
-	// 	<div class="card-body d-flex flex-column">
-	// 		<h3 class="card-title">Shortly URL shortening API website</h3>
-	// 		<p class="card-text">
-	// 			In this project, users should be able to: View the optimal layout for
-	// 			the site depending on their device's screen size, Shorten any valid URL,
-	// 			See a list of their shortened links, even after refreshing the browser,
-	// 			Copy the shortened link to their clipboard in a single click, Receive an
-	// 			error message when the form is submitted if: The input field is empty
-	// 		</p>
-	// 		<button
-	// 			class="btn mt-auto"
-	// 			type="button"
-	// 			data-bs-toggle="modal"
-	// 			data-bs-target="#staticBackdrop"
-	// 			onclick="modalInfo('Shortly URL shortening API website')"
-	// 		>
-	// 			View more
-	// 		</button>
-	// 	</div>
-	// </div>;
 
 	// create image div to add background image for card
 	let cardImage = document.createElement("div");
