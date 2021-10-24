@@ -285,7 +285,7 @@ function addCard(card_image, card_title, card_text) {
 // in this function, i gather the information that I want from the JSON object and pass it to my function where I want to make the div and append the div to the parent
 function displayProjects() {
 	// JSON.parse(projects).length or 9 for number display
-	for (let i = 0; i < JSON.parse(projects).length; i++) {
+	for (let i = 0; i < 9; i++) {
 		addCard(
 			JSON.parse(projects)[i].image,
 			JSON.parse(projects)[i].title,
@@ -304,7 +304,6 @@ let cardPreview = document.getElementById("card-preview");
 
 // function inserts the info into the modal: big description, code and live urls, and list of technologies
 function modalInfo(myCard) {
-	console.log(myCard);
 	let arr;
 	for (let i = 0; i < JSON.parse(projects).length; i++) {
 		// if the card chosen is the same as the JSON title
