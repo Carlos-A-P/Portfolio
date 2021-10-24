@@ -220,165 +220,195 @@ const projects = `[
         "preview": "<div style=\\"padding:66.18% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615338062?h=4546032644&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"sunnyside-agency-landing-page\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
         "longer_description": "This was a difficult challenge that really tested my CSS skills. I found it difficult to provide a flexible layout for all screen sizes so I limited the display to 375px mobile view and 1440px desktop view. However, I was more than happy to achieve a result that looked very similar to the end goal. In this challenge I learned about the filter property to change the color of my svg icons. I also learned how to implement a drop down navigation menu for mobile users."
     }
-]`
+]`;
 
-let myProjects = document.getElementById("grid")
+let myProjects = document.getElementById("grid");
 
 // another way to set up divs is to set up template literal and add values and append that maybe
 
-// function for adding cards 
+// function for adding cards
 function addCard(card_image, card_title, card_text) {
-    // create a card div
-    let projectCard = document.createElement('div')
-    projectCard.classList.add('card')
-    // create image div to add background image for card
-    let cardImage = document.createElement('div')
-    cardImage.classList.add('project-img')
-    cardImage.style.backgroundImage = String(card_image)
-    // create card body
-    let cardBody = document.createElement('div')
-    cardBody.classList.add('card-body', 'd-flex', 'flex-column')
-    //create card card title
-    let cardTitle = document.createElement('h3')
-    cardTitle.classList.add('card-title')
-    cardTitle.innerHTML = String(card_title)
-    // create card textContent
-    let cardText = document.createElement('p')
-    cardText.classList.add('card-text')
-    cardText.innerHTML = String(card_text)
-    //create button
-    let cardButton = document.createElement('button')
-    cardButton.classList.add('btn', 'mt-auto')
-    cardButton.setAttribute('type', 'button')
-    cardButton.setAttribute('data-bs-toggle', 'modal')
-    cardButton.setAttribute('data-bs-target', '#staticBackdrop')
-    // add onclick attribute to pass in modal function to gather modal info
-    cardButton.setAttribute('onClick', `modalInfo('${card_title}')`)
-    cardButton.innerHTML = 'View more'
-    // start assembling card div
-    projectCard.appendChild(cardImage)
-    projectCard.appendChild(cardBody)
-    cardBody.appendChild(cardTitle)
-    cardBody.appendChild(cardText)
-    cardBody.appendChild(cardButton)
+	// create a card div
+	let projectCard = document.createElement("div");
+	projectCard.classList.add("card");
 
-    //add card to parent div
-    myProjects.appendChild(projectCard)
-    {/*
-    <div class="card">
-        <div class="project-img"></div>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                the
-                card's content.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop" onClick = 'modalInfo('card_title')'>
-                View more
-            </button>
-        </div>
-    </div>
-*/}
+	// projectCard.innerHTML = `
+	//         <div class="project-img"
+	//             style="background-image: ${String(card_image)}"></div>
+	//         <div class="card-body d-flex flex-column">
+	//             <h3 class="card-title">${String(card_title)}</h3>
+	//             <p class="card-text">${String(card_text)}</p>
+	//             <button class="btn mt-auto" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick="modalInfo('${card_title}')">
+	//                 View more
+	//             </button>
+	//         </div>
+
+	// `;
+
+	// <div class="card">
+	// 	<div
+	// 		class="project-img"
+	// 		style="background-image: url('../img/url-shortening-api.jpg');"
+	// 	></div>
+	// 	<div class="card-body d-flex flex-column">
+	// 		<h3 class="card-title">Shortly URL shortening API website</h3>
+	// 		<p class="card-text">
+	// 			In this project, users should be able to: View the optimal layout for
+	// 			the site depending on their device's screen size, Shorten any valid URL,
+	// 			See a list of their shortened links, even after refreshing the browser,
+	// 			Copy the shortened link to their clipboard in a single click, Receive an
+	// 			error message when the form is submitted if: The input field is empty
+	// 		</p>
+	// 		<button
+	// 			class="btn mt-auto"
+	// 			type="button"
+	// 			data-bs-toggle="modal"
+	// 			data-bs-target="#staticBackdrop"
+	// 			onclick="modalInfo('Shortly URL shortening API website')"
+	// 		>
+	// 			View more
+	// 		</button>
+	// 	</div>
+	// </div>;
+
+	// create image div to add background image for card
+	let cardImage = document.createElement("div");
+	cardImage.classList.add("project-img");
+	cardImage.style.backgroundImage = String(card_image);
+
+	// create card body
+	let cardBody = document.createElement("div");
+	cardBody.classList.add("card-body", "d-flex", "flex-column");
+	//create card card title
+	let cardTitle = document.createElement("h3");
+	cardTitle.classList.add("card-title");
+	cardTitle.innerHTML = String(card_title);
+	// create card textContent
+	let cardText = document.createElement("p");
+	cardText.classList.add("card-text");
+	cardText.innerHTML = String(card_text);
+
+	//create button
+	let cardButton = document.createElement("button");
+	cardButton.classList.add("btn", "mt-auto");
+	cardButton.setAttribute("type", "button");
+	cardButton.setAttribute("data-bs-toggle", "modal");
+	cardButton.setAttribute("data-bs-target", "#projectModal");
+	// add onclick attribute to pass in modal function to gather modal info
+	cardButton.setAttribute("onClick", `modalInfo('${card_title}')`);
+	cardButton.innerHTML = "View more";
+	// start assembling card div
+	projectCard.appendChild(cardImage);
+	projectCard.appendChild(cardBody);
+	cardBody.appendChild(cardTitle);
+	cardBody.appendChild(cardText);
+	cardBody.appendChild(cardButton);
+
+	//add card to parent div
+	myProjects.appendChild(projectCard);
 }
 
 // in this function, i gather the information that I want from the JSON object and pass it to my function where I want to make the div and append the div to the parent
 function displayProjects() {
-    // JSON.parse(projects).length or 9 for number display
-    for (let i = 0; i < JSON.parse(projects).length; i++) {
-        addCard(JSON.parse(projects)[i].image, JSON.parse(projects)[i].title, JSON.parse(projects)[i].description)
-    }
+	// JSON.parse(projects).length or 9 for number display
+	for (let i = 0; i < JSON.parse(projects).length; i++) {
+		addCard(
+			JSON.parse(projects)[i].image,
+			JSON.parse(projects)[i].title,
+			JSON.parse(projects)[i].description
+		);
+	}
 }
-displayProjects()
+displayProjects();
 
-let modalTitle = document.getElementById('staticBackdropLabel')
-let card_description = document.getElementById('card-description')
-let codeBtn = document.getElementById('viewCode')
-let liveBtn = document.getElementById('viewLive')
-let techList = document.getElementById('tech_List')
-let cardPreview = document.getElementById('card-preview')
+let modalTitle = document.getElementById("projectModalLabel");
+let card_description = document.getElementById("card-description");
+let codeBtn = document.getElementById("viewCode");
+let liveBtn = document.getElementById("viewLive");
+let techList = document.getElementById("tech_List");
+let cardPreview = document.getElementById("card-preview");
 
 // function inserts the info into the modal: big description, code and live urls, and list of technologies
 function modalInfo(myCard) {
-    let arr
-    for (let i = 0; i < JSON.parse(projects).length; i++) {
-        // if the card chosen is the same as the JSON title 
-        if (myCard === String(JSON.parse(projects)[i].title)) {
-            // modal title = "title"
-            modalTitle.innerText = String(JSON.parse(projects)[i].title)
-            // card preview video
-            cardPreview.innerHTML = JSON.parse(projects)[i].preview
-            // card description = "longer_description"
-            card_description.innerText = String(JSON.parse(projects)[i].longer_description)
-            // href = "code"
-            codeBtn.setAttribute('href', `${JSON.parse(projects)[i].code}`)
-            // href = "live"
-            liveBtn.setAttribute('href', `${JSON.parse(projects)[i].live}`)
-            // adding "made_with" values in variable
-            arr = JSON.parse(projects)[i].made_with
-            let item = []
-            for (let j = 0; j < Object.keys(arr).length; j++) {
-                // loop through arr variable to add values in an array and join as li tags together to add inside parent ul
-                item.push(`<li>${arr[j]}</li>`)
-                techList.innerHTML = item.join('')
-            }
-        }
-    }
+	console.log(myCard);
+	let arr;
+	for (let i = 0; i < JSON.parse(projects).length; i++) {
+		// if the card chosen is the same as the JSON title
+		if (myCard === String(JSON.parse(projects)[i].title)) {
+			// modal title = "title"
+			modalTitle.innerText = String(JSON.parse(projects)[i].title);
+			// card preview video
+			cardPreview.innerHTML = JSON.parse(projects)[i].preview;
+			// card description = "longer_description"
+			card_description.innerText = String(
+				JSON.parse(projects)[i].longer_description
+			);
+			// href = "code"
+			codeBtn.setAttribute("href", `${JSON.parse(projects)[i].code}`);
+			// href = "live"
+			liveBtn.setAttribute("href", `${JSON.parse(projects)[i].live}`);
+			// adding "made_with" values in variable
+			arr = JSON.parse(projects)[i].made_with;
+			let item = [];
+			for (let j = 0; j < Object.keys(arr).length; j++) {
+				// loop through arr variable to add values in an array and join as li tags together to add inside parent ul
+				item.push(`<li>${arr[j]}</li>`);
+				techList.innerHTML = item.join("");
+			}
+		}
+	}
 }
 
 // ============modal for card description
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
-})
-
+var myModal = document.getElementById("myModal");
+var myInput = document.getElementById("myInput");
+myModal.addEventListener("shown.bs.modal", function () {
+	myInput.focus();
+});
 
 // ============Email Form
 window.addEventListener("DOMContentLoaded", function () {
-    // get the form elements defined in your form HTML above
-  
-    var form = document.getElementById("my-form")
-    // var button = document.getElementById("my-form-button")
-    var status = document.getElementById("status")
-  
-    // Success and Error functions for after the form is submitted
-  
-    function success() {
-      form.reset()
-      status.classList.add("success")
-      status.innerHTML = "Thanks!"
-    }
-  
-    function error() {
-      status.classList.add("error")
-      status.innerHTML = "Oops! There was a problem."
-    }
-  
-    // handle the form submission event
-  
-    form.addEventListener("submit", function (ev) {
-      ev.preventDefault()
-      var data = new FormData(form)
-      ajax(form.method, form.action, data, success, error)
-    })
-  })
-  
-  // helper function for sending an AJAX request
-  
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest()
-    xhr.open(method, url)
-    xhr.setRequestHeader("Accept", "application/json")
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType)
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType)
-      }
-    }
-    xhr.send(data)
-  }
-  
+	// get the form elements defined in your form HTML above
 
+	var form = document.getElementById("my-form");
+	// var button = document.getElementById("my-form-button")
+	var status = document.getElementById("status");
+
+	// Success and Error functions for after the form is submitted
+
+	function success() {
+		form.reset();
+		status.classList.add("success");
+		status.innerHTML = "Thanks!";
+	}
+
+	function error() {
+		status.classList.add("error");
+		status.innerHTML = "Oops! There was a problem.";
+	}
+
+	// handle the form submission event
+
+	form.addEventListener("submit", function (ev) {
+		ev.preventDefault();
+		var data = new FormData(form);
+		ajax(form.method, form.action, data, success, error);
+	});
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+	var xhr = new XMLHttpRequest();
+	xhr.open(method, url);
+	xhr.setRequestHeader("Accept", "application/json");
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState !== XMLHttpRequest.DONE) return;
+		if (xhr.status === 200) {
+			success(xhr.response, xhr.responseType);
+		} else {
+			error(xhr.status, xhr.response, xhr.responseType);
+		}
+	};
+	xhr.send(data);
+}
