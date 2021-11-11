@@ -1,5 +1,20 @@
 const projects = `[
     {
+        "title": "E-Commerce Product Page",
+        "image": "url(../img/e-commerce.jpg)",
+        "description": "This is a E-commerce product page where the user is allowed to open a lightbox gallery by clicking on the large product image, switch the large product image by clicking on the small thumbnail images, view cart, and add/remove cart items",
+        "live": "https://cpwd-ecommerce-product-page.netlify.app/",
+        "code": "https://github.com/Carlos-A-P/ecommerce-product-page-react",
+        "made_with": {
+            "0":"React.js", 
+            "1":"Redux", 
+            "2":"CSS"
+        },
+        "preview": "<div style=\\"padding:61.12% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/644902213?h=9633cd3cb3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"e-commerce product page\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
+        
+        "longer_description": "This was a very challenging and fun project. I implemented the Redux javascript library in order to manage the state for my cart. I became more comfortable with React hooks and can comfortably navigate and implement functions through out my project."
+    },
+    {
         "title": "Shortly URL shortening API website",
         "image": "url(../img/url-shortening-api.jpg)",
         "description": "In this project, users should be able to: View the optimal layout for the site depending on their device's screen size, Shorten any valid URL, See a list of their shortened links, even after refreshing the browser, Copy the shortened link to their clipboard in a single click, Receive an error message when the form is submitted if: The input field is empty",
@@ -35,7 +50,7 @@ const projects = `[
         "longer_description": "This project was my first time implementing bootstrap and jquery into my project. I thought jquery was complex at first, but after getting the hang of its settings and reading through the documentation, I found that I saved a lot of time using this framework. I usually try to keep accessibility in mind, but bootstrap already gets that taken care of. I tried to keep animations to a minimum. I didn't want to rely on every user having above-average internet speed, and I learned that animations could be incredibly taxing on mobile devices. I used jquery to add some exciting animations into my nav settings. There were already many blogs and methods to do this, and I wanted to try it out. I'm glad I did since it made my portfolio look more professional, and I learned a lot about programming frameworks. As for the video previews, I was thinking of downloading video files, but I quickly learned that it could drastically slow down the website's loading speed. I also had a problem where I didn't want to create an individual modal for each card, so I used JSON object and for loops to pass in values depending on the card chosen. The JSON object also allowed me to add values and automatically update my project section by appending a new child. I did this using for loops."
     },
     {
-        "title": "Coffee Roasters - Subscription",
+        "title": "Coffee Roasters Multi-page Subscription Site",
         "image": "url(../img/coffeeroasters-subscription.png)",
         "description": "This is a 3-page coffee subscription website. Users should be able to: View the optimal layout for each page depending on their device's screen size, See hover states for all interactive elements throughout the site, Make selections to create a coffee subscription and see an order summary modal of their choices.",
         "live": "https://cpwd-coffeeroasters.netlify.app/",
@@ -120,105 +135,6 @@ const projects = `[
         },
         "preview": "<div style=\\"padding:66.54% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615322739?h=47000b7843&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"countdown-timer\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
         "longer_description": "In this challenge I used the a javascript code from Website CodePen Home Flip Clock & Countdown which is a clock made without a HTML so I mainly focused on prioritizing my CSS and changing styles using Devtools. I also added a few changes to the javascript to remove the second timer."
-    },
-    {
-        "title": "Time Tracking DashBoard",
-        "image": "url(../img/time-tracking-dashboard.jpg)",
-        "description": "This is a Front End mentor project. User can toggle between viewing Daily, Weekly, and Monthly stats",
-        "live": "https://cpwd-time-tracking-dashboard.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/time-tracking-dashboard",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript",
-            "3":"JSON"
-        },
-        "preview": "<div style=\\"padding:66.54% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615323739?h=6ac12a5a19&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"time-tracking-dashboard\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "In this challenge I learned how to utilize a JSON file into my JavaScript. At first I thought that I would have to somehow link the data.json file to my javascript and somehow import the content. What I found to be most helpful was to change the file into a script.js file or simply copy and paste the object into quotation marks. I then set the object to a variable in order to use it in my function."
-    },
-    {
-        "title": "Testimonial Grid Section",
-        "image": "url(../img/testimonial-grid-section.JPG)",
-        "description": "A Frontend Mentor project. This is a project where I used grid to position each card component in their own position with different heights",
-        "live": "https://cpwd-testimonial-grid-section.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/testimonial-grid-section",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:66.54% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615325586?h=db7c15b0ba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"testimonial-grid-section\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This challenge tested my position skills. It helps me improve on grid layout."
-    },
-    {
-        "title": "Interactive Pricing Component",
-        "image": "url(../img/interactive-pricing-component.jpg)",
-        "description": "A Frontend Mentor project, this is a project where users are able to slide a bar and change the prices depending on the position of the slider. I used Javascript, CSS, and HTML to complete this project",
-        "live": "https://cpwd-interactive-pricing-component.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/interactive-pricing-component-main",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:66.54% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615326713?h=54facac2d5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"interactive-pricing-component\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This challenged taught me some new ways to use the ::before and ::after pseudo classes and how to implement the equivalent of media queries in javascript."
-    },
-    {
-        "title": "Fylo Data Storage Component",
-        "image": "url(../img/fylo-data-storage-component.jpg)",
-        "description": "A Frontend Mentor project. I storage component that shows the amount of space left.",
-        "live": "https://cpwd-fylo-storage-component.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/fylo-data-storage-component",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:65.69% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615327651?h=d18c9ee9ab&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"fylo-storage-component\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This is project is a challenge to test my css skills. What I found most helpful was the clip-path style property and position property.  I used HTML and CSS to complete the project"
-    },
-    {
-        "title": "Fylo Dark Theme Landing Page",
-        "image": "url(../img/fylo-dark-theme-landing-page.jpg)",
-        "description": "A challenge from front end mentor. This is a landing page made with CSS, HTML, and a bit of JavaScript. This is a main landing page for Fylo company",
-        "live": "https://cpwd-fylo-dark-theme-landing-page.netlify.app/#",
-        "code": "https://github.com/Carlos-A-P/fylo-dark-theme-landing-page",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:65.81% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615333258?h=25ab115998&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"fylo-dark-theme-landing-page\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This challenge tested my position skills. It helped me improve my flex-box, grid and absolute positioning skills for my elements and background element. It was one of the biggest projects I've made so I had to make sure I maintained clean and organized code."
-    },
-    {
-        "title": "Pricing component with toggle",
-        "image": "url(../img/pricing-component-with-toggle.JPG)",
-        "description": "This project is a pricing component where the use is able to see display cards and toggle between prices using a slider. I used JavaScript to incorporate a slider between two options and display them within my HTML",
-        "live": "https://cpwd-pricing-component-with-toggle.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/Pricing-component-with-toggle",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:66.54% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615336658?h=dc19472165&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"pricing-component-with-toggle\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This challenged helped me get familiar with event listeners and it helped test my css skills to make a slider."
-    },
-    {
-        "title": "Sunnyside Agency Landing Page",
-        "image": "url(../img/sunnyside-agency-landing-page.JPG)",
-        "description": "This is a challenge from frontend mentor. I used HTML, CSS, and JavaScript to complete this project and learned how to make a mobile dropdown nav bar using JavaScript",
-        "live": "https://carlospwd-sunnyside-agency-landing-page-main.netlify.app/",
-        "code": "https://github.com/Carlos-A-P/sunnyside-agency-landing-page-main",
-        "made_with": {
-            "0":"HTML", 
-            "1":"CSS", 
-            "2":"JavaScript"
-        },
-        "preview": "<div style=\\"padding:66.18% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/615338062?h=4546032644&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"sunnyside-agency-landing-page\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
-        "longer_description": "This was a difficult challenge that really tested my CSS skills. I found it difficult to provide a flexible layout for all screen sizes so I limited the display to 375px mobile view and 1440px desktop view. However, I was more than happy to achieve a result that looked very similar to the end goal. In this challenge I learned about the filter property to change the color of my svg icons. I also learned how to implement a drop down navigation menu for mobile users."
     }
 ]`;
 
@@ -285,7 +201,7 @@ function addCard(card_image, card_title, card_text) {
 // in this function, i gather the information that I want from the JSON object and pass it to my function where I want to make the div and append the div to the parent
 function displayProjects() {
 	// JSON.parse(projects).length or 9 for number display
-	for (let i = 0; i < 9; i++) {
+	for (let i = 0; i < 6; i++) {
 		addCard(
 			JSON.parse(projects)[i].image,
 			JSON.parse(projects)[i].title,
