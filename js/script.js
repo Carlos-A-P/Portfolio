@@ -67,7 +67,7 @@ const projects = `[
     {
         "title": "Github User Search App",
         "image": "url(../img/github-user-search-app.jpg)",
-        "description": "This app allows users to search for a username from github. The app displays the user's username,. date joined, bio, links added, number of followers, number of repos, and number of following",
+        "description": "This app allows users to search for a username from Github using Github API. The app displays relevant information based on their search. User can also toggle between light and dark themes.",
         "live": "https://cpwd-github-user-search-app.netlify.app/",
         "code": "https://github.com/Carlos-A-P/github-user-search-app",
         "made_with": {
@@ -82,7 +82,7 @@ const projects = `[
     {
         "title": "To-Do App",
         "image": "url(../img/todo-app.jpg)",
-        "description": "This is a todo list challenge from frontend mentor. Important things I learned from this project are theme changer mechanics, localStorage, and JSON",
+        "description": "This is a todo list challenge from frontend mentor. User should be able to: add new todos to the list, marks todos as complete, delete todos from the list, filter by all/active/complete todos, clear all completed todos, toggle light and dark mode, drag and drop to reorder items on the list",
         "live": "https://cpwd-todo-list.netlify.app/",
         "code": "https://github.com/Carlos-A-P/ToDo-List",
         "made_with": {
