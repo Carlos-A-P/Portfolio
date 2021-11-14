@@ -80,6 +80,20 @@ const projects = `[
         "longer_description": "This is my first API project where I made an app able to gather information from github to display user profile information. I also learned how to use Figma design files in order to provide the most accurate measurements possible."
     },
     {
+        "title": "Calculator App + Color Schemes",
+        "image": "url(../img/calculator.jpg)",
+        "description": "This is a frontend mentor challenge. In this project I focused more on accessibility. User should be able to: See the size of the elements adjust based on their device's screen size; perform mathematical operations like addition, subtraction, multiplication, and division; Adjust the color theme based on their preference.",
+        "live": "https://cpwd-calculator-app.netlify.app/",
+        "code": "https://github.com/Carlos-A-P/calculator-app-multi-color",
+        "made_with": {
+            "0":"HTML", 
+            "1":"SASS/SCSS", 
+            "2":"JavaScript"
+        },
+        "preview": "<div style=\\"padding:64.98% 0 0 0;position:relative;\\"><iframe src=\\"https://player.vimeo.com/video/645830053?h=33004fb300&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\\" frameborder=\\"0\\" allow=\\"autoplay; fullscreen; picture-in-picture\\" allowfullscreen style=\\"position:absolute;top:0;left:0;width:100%;height:100%;\\" title=\\"Calculator app\\"></iframe></div><script src=\\"https://player.vimeo.com/api/player.js\\"></script>",
+        "longer_description": "This was a fun challenge and I learned a lot about styling with Sass. I also used Javascript classes to set up the calculator. I also separated the theme files into another folder in order to add some organization into my project. I then imported the theme file into my script file in order to reduce src links in my HTML. I also wanted to focus more on accessibility this challenge by using proper HTML5 markup. I also tried to implement a feature where the user can navigate the keypad with the W,A,S,D keys but was unable to finish. Overall this is still a functional and accessible calculator and I want to improve it's features later on."
+    },
+    {
         "title": "To-Do App",
         "image": "url(../img/todo-app.jpg)",
         "description": "This is a todo list challenge from frontend mentor. User should be able to: add new todos to the list, marks todos as complete, delete todos from the list, filter by all/active/complete todos, clear all completed todos, toggle light and dark mode, drag and drop to reorder items on the list",
