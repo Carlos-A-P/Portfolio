@@ -1,6 +1,6 @@
 # My Portfolio
 
-- Live website -(https://carlospwd.netlify.app/)
+- Live website -(https://www.carlospwd.com/)
 
 ## Table of contents
 
